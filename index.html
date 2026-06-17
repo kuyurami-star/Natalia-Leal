@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - U.E.C Eduardo Blanco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand" id="brandTitle">
+                 Eduardo Blanco
+            </a>
+            <ul class="nav-links">
+                <li><a href="#perfil">Mi Perfil</a></li>
+                <li><a href="#foda">FODA</a></li>
+                <li><a href="#competencias">Competencias</a></li>
+                <li><a href="#universidades">Universidades</a></li>
+                <li><a href="#eventos">Eventos DOM</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="logo-container">
+            <!-- Marcador para que el alumno coloque su Logo -->
+            <img src="Logo RGB (2).jpg" alt="Logo Colegio" id="schoolLogo" onerror="this.src='https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=150&h=150';">
+        </div>
+        <h1>Perfil Profesional Estudiantil</h1>
+        <p>U.E. Colegio Eduardo Blanco • 5to Año de Bachillerato</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- SECCIÓN 1: BIOGRAFÍA / INTRODUCCIÓN -->
+        <section id="perfil" class="card profile-main interactive-hover">
+            <h2 id="userName">Nombre del Estudiante</h2>
+            <p id="userIntro" class="intro-text">Esperando la carga de datos del perfil profesional...</p>
+            <hr>
+            <p style="font-size: 1.1rem;">
+                <strong>Meta Profesional:</strong> 
+                <span id="userGoal" style="color: var(--azul-primario); font-weight: 600;">Presione el botón inferior para cargar</span>
+            </p>
+        </section>
+
+        <!-- SECCIÓN 2: ANÁLISIS FODA (4 CARDS) -->
+        <section id="foda">
+            <h2 class="section-title">Análisis FODA Vocacional</h2>
+            <div class="foda-grid">
+                <div class="card foda-item fortaleza interactive-hover" id="cardF">
+                    <h3><span class="icon">F</span> Fortalezas</h3>
+                    <ul id="listFortalezas">
+                        <li>Habilidades internas a destacar...</li>
+                    </ul>
+                </div>
+                <div class="card foda-item oportunidad interactive-hover" id="cardO">
+                    <h3><span class="icon">O</span> Oportunidades</h3>
+                    <ul id="listOportunidades">
+                        <li>Factores externos que puedo aprovechar...</li>
+                    </ul>
+                </div>
+                <div class="card foda-item debilidad interactive-hover" id="cardD">
+                    <h3><span class="icon">D</span> Debilidades</h3>
+                    <ul id="listDebilidades">
+                        <li>Aspectos internos que debo mejorar...</li>
+                    </ul>
+                </div>
+                <div class="card foda-item amenaza interactive-hover" id="cardA">
+                    <h3><span class="icon">A</span> Amenazas</h3>
+                    <ul id="listAmenazas">
+                        <li>Factores del entorno que me pueden afectar...</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: OTROS 4 CONTENEDORES ADICIONALES -->
+        <section id="competencias">
+            <h2 class="section-title">Competencias e Historial Destacado</h2>
+            <div class="complementary-grid">
+                
+                <!-- Contenedor 1: Habilidades Técnicas -->
+                <div class="card comp-item interactive-hover" id="cardHabilidades">
+                    <h4>Habilidades Técnicas</h4>
+                    <p style="font-size: 0.9rem; color: var(--gris-suave); margin-bottom: 8px;">Conocimientos informáticos adquiridos:</p>
+                    <div class="badge-container" id="containerHabilidades">
+                        <span class="badge">Aún sin cargar</span>
+                    </div>
+                </div>
+
+                <!-- Contenedor 2: Idiomas -->
+                <div class="card comp-item interactive-hover" id="cardIdiomas">
+                    <h4> Idiomas</h4>
+                    <p style="font-size: 0.9rem; color: var(--gris-suave); margin-bottom: 8px;">Competencia lingüística declarada:</p>
+                    <div class="badge-container" id="containerIdiomas">
+                        <span class="badge">Aún sin cargar</span>
+                    </div>
+                </div>
+
+                <!-- Contenedor 3: Certificaciones -->
+                <div class="card comp-item interactive-hover" id="cardCertificaciones">
+                    <h4> Certificaciones y Cursos</h4>
+                    <ul id="listCertificaciones" style="list-style-type: square;">
+                        <li>Esperando datos del estudiante...</li>
+                    </ul>
+                </div>
+
+                <!-- Contenedor 4: Proyectos o Logros -->
+                <div class="card comp-item interactive-hover" id="cardLogros">
+                    <h4> Proyectos y Logros</h4>
+                    <ul id="listLogros" style="list-style-type: circle;">
+                        <li>Proyectos académicos relevantes...</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: ASPIRACIONES UNIVERSITARIAS -->
+        <section id="universidades" class="card interactive-hover">
+            <h2 class="section-title"> Destinos Universitarios Prospectos</h2>
+            <p style="color: var(--gris-suave); margin-bottom: 15px;">Universidades seleccionadas para postulación prioritaria:</p>
+            <div id="uniContainer" class="uni-grid">
+                <span style="color: var(--gris-suave); font-style: italic;">Esperando asignación...</span>
+            </div>
+        </section>
+
+        
+        
+        <!-- BOTÓN DE ACCIÓN PARA CARGAR EL PERFIL -->
+        <div class="actions">
+            <button id="btnActualizar" class="btn">
+                <span>⚡ Cargar Perfil Profesional</span>
+            </button>
+        </div>
+
+    </main>
+    <script src="script1.js"></script>
+</body>
+</html>
